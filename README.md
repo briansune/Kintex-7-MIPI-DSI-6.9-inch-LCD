@@ -32,7 +32,15 @@ Issue: According to datasheet GC9702P it is said to be supported 16-bit RGB 0Eh.
 
 After implementation, LCD is not correctly display missing color and area is wrong.
 
-ToDo: Investigate with LCD vendor.
+ToDo: Investigate with LCD vendor - 🟢 DONE
+
+No matter it is from this DUT LCD vendor nor same model and other vendors.
+
+All "GC9702P" are claimed as not test on 16bit color space.
+
+Many vendors are not even understanding MIPI-DSI 1.0 or above standard.
+
+Not fix is currently applied as this LCD driver is inherently questionable on DT=0x0E.
 
 ## Test Patterns
 
