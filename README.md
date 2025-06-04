@@ -24,9 +24,7 @@ This design requires neither a softcore nor a hardcore (using only pure FSM + LU
 
 Additionally, the design is independent of Vivado IP (excluding inherent FPGA building blocks) and does not require a DPHY IP either.
 
-# Demonstration
-
-Remarks: This LCD color profile is not as good as other LCD.
+# Known Issue
 
 Issue: According to datasheet GC9702P it is said to be supported 16-bit RGB 0Eh.
 
@@ -41,6 +39,10 @@ All "GC9702P" are claimed as not test on 16bit color space.
 Many vendors are not even understanding MIPI-DSI 1.0 or above standard.
 
 Not fix is currently applied as this LCD driver is inherently questionable on DT=0x0E.
+
+# Demonstration
+
+Remarks: This LCD color profile is not as good as other LCD.
 
 ## Test Patterns
 
